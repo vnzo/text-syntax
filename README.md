@@ -4,7 +4,7 @@ A clean, modern, and highly readable syntax highlighting plugin for plain text (
 
 ## Installation
 
-### 1. Using a Plugin Manager (Recommended)
+### Using a Plugin Manager (Recommended)
 
 Add the appropriate line to your plugin configuration block and run your manager's install command:
 
@@ -24,7 +24,7 @@ Plug 'vnzo/text-syntax'
 
 ---
 
-### 2. Native Package System (No manager required)
+### or Native Package System (No manager required)
 
 If you prefer using Vim's native pack system, clone this repository into your start folder:
 
@@ -40,7 +40,7 @@ If you prefer using Vim's native pack system, clone this repository into your st
 
 ---
 
-### 3. Manual Installation
+### or Manual Installation
 
 If you prefer to install files manually without using packages, copy the `syntax/text.vim` file directly into your runtime configuration directory:
 

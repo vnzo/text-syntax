@@ -91,9 +91,9 @@ hi def link txtBrackets     Special
 hi def link txtBraces       Type           
 
 " Inside-Bracket Text Styling
-hi def link txtInsideParens   Comment      
-hi def link txtInsideBrackets Comment      
-hi def link txtInsideBraces   Comment      
+hi def link txtInsideParens   Operator      
+hi def link txtInsideBrackets Operator      
+hi def link txtInsideBraces   Operator      
 
 " Comment Line styling
 hi def link txtCommentSymbol Comment       

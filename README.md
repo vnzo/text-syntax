@@ -1,4 +1,46 @@
-# text-syntax
+Markdown
+
+# text-syntax.nvim
+
+Custom syntax highlighting engine for plain text files (`.txt`), featuring high-contrast formatting for structural blocks, brackets, Chinese numerals, and math numbers.
+
+## Screenshots
+
+![Syntax Overview](images/demo-1.png)
+![Bracket Nesting](images/demo-2.png)
+![Chinese Numerals & Quotes](images/demo-3.png)
+
+---
+
+## Installation
+
+### 1. Plugin Managers (Recommended)
+
+#### **lazy.nvim**
+```lua
+{
+    "vnzo/text-syntax",
+}
+
+vim-plug
+Vim Script
+
+Plug 'vnzo/text-syntax'
+
+2. Manual Installation (Pack System)
+
+Clone or copy this repository directly into your runtime package directories:
+Linux (Neovim / Vim)
+
+    Neovim: ~/.local/share/nvim/site/pack/plugins/start/text-syntax/
+
+    Vim: ~/.vim/pack/plugins/start/text-syntax/
+
+Windows (Neovim Pack System)
+
+    Path: %LOCALAPPDATA%\nvim-data\site\pack\plugins\start\text-syntax\
+
+    Portable Alternative: [Your-Portable-Folder]\data\site\pack\plugins\start\text-syntax\# text-syntax
 
 A clean, modern, and highly readable syntax highlighting plugin for plain text (`.txt`) files in Vim and Neovim.
 

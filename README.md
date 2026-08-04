@@ -2,14 +2,16 @@ markdown
 
 # text-syntax
 
-Custom syntax highlighting for plain text (`.txt`) files in Vim / Neovim.
+Custom syntax highlighting for plain text (`.txt`) files in **Vim** and **Neovim**.
 
-Designed for high-contrast readability with special support for:
-- Nested brackets `() [] {}` (including full-width Chinese variants)
+It gives you high-contrast colors for:
+- Nested brackets `() [] {}` (including Chinese full-width brackets)
 - Chinese numerals
 - Quotes (English + Chinese)
-- Structural blocks, lists, and titles
-- Numbers, punctuation, URLs, and common icons
+- Titles, lists, comments
+- Numbers, punctuation, URLs, and icons
+
+---
 
 ## Screenshots
 
@@ -17,135 +19,87 @@ Designed for high-contrast readability with special support for:
 |:---:|:---:|:---:|
 | ![Demo 1](images/autumn.JPG) | ![Demo 2](images/forest.JPG) | ![Demo 3](images/garden.JPG) |
 
-## Features
-
-- **Nested brackets** with different highlight groups for `()`, `[]`, and `{}`
-- **Chinese number highlighting** (both line-start and inline)
-- **Smart quotes** support (`" "`, `“ ”`, `‘ ’`)
-- **Keywords**: `TODO`, `FIXME`, `NOTE`, `ERROR`, etc.
-- **Comments** (`#`), titles, and list markers
-- **URLs** and email headers
-- **Icons / emoji** highlighting
-- Three dedicated colorschemes: `autumn`, `forest`, `garden`
-
-## Installation
-
-### lazy.nvim (Recommended)
-
-```lua
-{
-  "vnzo/text-syntax",
-  -- optional: force load on txt files
-  ft = "text",
-}
-
-vim-plugvim
-
-Plug 'vnzo/text-syntax'
-
-Manual InstallationClone the repository into your pack directory:Neovimbash
-
-git clone https://github.com/vnzo/text-syntax.git \
-  ~/.local/share/nvim/site/pack/plugins/start/text-syntax
-
-Vimbash
-
-git clone https://github.com/vnzo/text-syntax.git \
-  ~/.vim/pack/plugins/start/text-syntax
-
-Windows (Neovim)
-
-%LOCALAPPDATA%\nvim-data\site\pack\plugins\start\text-syntax\
-
-UsageOpen any .txt file — the syntax should activate automatically.
-Choose a colorscheme (optional but recommended):
-
-vim
-
-colorscheme autumn   " or forest / garden
-
-You can also put this in your config:vim
-
-" Force the syntax for text files
-autocmd FileType text setlocal syntax=text
-
-# text-syntax
-
-Custom syntax highlighting for plain text (`.txt`) files in Vim / Neovim.
-
-Designed for high-contrast readability with special support for:
-- Nested brackets `() [] {}` (including full-width Chinese variants)
-- Chinese numerals
-- Quotes (English + Chinese)
-- Structural blocks, lists, and titles
-- Numbers, punctuation, URLs, and common icons
-
-## Screenshots
-
-| Overview | Nesting & Brackets | Quotes & Numbers |
-|:---:|:---:|:---:|
-| ![Demo 1](images/autumn.JPG) | ![Demo 2](images/forest.JPG) | ![Demo 3](images/garden.JPG) |
+---
 
 ## Features
 
-- **Nested brackets** with different highlight groups for `()`, `[]`, and `{}`
-- **Chinese number highlighting** (both line-start and inline)
-- **Smart quotes** support (`" "`, `“ ”`, `‘ ’`)
-- **Keywords**: `TODO`, `FIXME`, `NOTE`, `ERROR`, etc.
-- **Comments** (`#`), titles, and list markers
-- **URLs** and email headers
-- **Icons / emoji** highlighting
-- Three dedicated colorschemes: `autumn`, `forest`, `garden`
-
-## Installation
-
-### lazy.nvim (Recommended)
-
-```lua
-{
-  "vnzo/text-syntax",
-  -- optional: force load on txt files
-  ft = "text",
-}Markdown
-
-# text-syntax
-
-Custom syntax highlighting engine for plain text files (`.txt`), featuring high-contrast formatting for structural blocks, brackets, Chinese numerals, and math numbers.
-
-## Screenshots
-
-| Overview | Nesting & Brackets | Quotes & Numbers |
-| :---: | :---: | :---: |
-| ![Demo 1](images/autumu.jpg) | ![Demo 2](images/forest.jpg) | ![Demo 3](images/garden.jpg) |
+- Different highlight colors for nested brackets `()`, `[]`, `{}`
+- Chinese number highlighting
+- Smart quote support (`" "`, `“ ”`, `‘ ’`)
+- Keywords: `TODO`, `FIXME`, `NOTE`, `ERROR`, etc.
+- Comment lines starting with `#`
+- Titles and bullet lists
+- URL and email highlighting
+- Three built-in colorschemes: `autumn`, `forest`, `garden`
 
 ---
 
 ## Installation
 
-### 1. Plugin Managers (Recommended)
+### 1. Using lazy.nvim (Recommended)
 
-#### **lazy.nvim**
+Open your Neovim configuration file (usually `~/.config/nvim/lua/plugins.lua` or similar) and add the following code inside your plugin list:
+
 ```lua
 {
-    "vnzo/text-syntax",
+  "vnzo/text-syntax",
 }
 
-vim-plug
-Vim Script
+Example of how it should look:lua
+
+require("lazy").setup({
+  -- other plugins here...
+
+  {
+    "vnzo/text-syntax",
+  },
+})
+
+Then restart Neovim or run :Lazy sync.2. Using vim-plugAdd this line to your ~/.vimrc or init.vim:vim
 
 Plug 'vnzo/text-syntax'
 
-2. Manual Installation (Pack System)
+Then run:vim
 
-Clone or copy this repository directly into your runtime package directories:
-Linux (Neovim / Vim)
+:PlugInstall
 
-    Neovim: ~/.local/share/nvim/site/pack/plugins/start/text-syntax/
+3. Manual InstallationIf you don’t use a plugin manager, you can install it manually.On Linux / macOS (Neovim):bash
 
-    Vim: ~/.vim/pack/plugins/start/text-syntax/
+git clone https://github.com/vnzo/text-syntax.git ~/.local/share/nvim/site/pack/plugins/start/text-syntax
 
-Windows (Neovim Pack System)
+On Linux / macOS (Vim):bash
 
-    Path: %LOCALAPPDATA%\nvim-data\site\pack\plugins\start\text-syntax\
+git clone https://github.com/vnzo/text-syntax.git ~/.vim/pack/plugins/start/text-syntax
 
-    Portable Alternative: [Your-Portable-Folder]\data\site\pack\plugins\start\text-syntax\
+On Windows (Neovim):Clone the repository into this folder:
+
+%LOCALAPPDATA%\nvim-data\site\pack\plugins\start\text-syntax\
+
+After cloning, restart Vim or Neovim.How to UseOpen any .txt file.
+The syntax highlighting should activate automatically.
+(Recommended) Choose one of the included colorschemes for the best look:
+
+vim
+
+:colorscheme autumn
+
+Other available themes:vim
+
+:colorscheme forest
+:colorscheme garden
+
+You can also set a default theme in your config file:vim
+
+colorscheme autumn
+
+ColorschemesThis plugin comes with three carefully designed dark themes:Theme
+Style
+autumn
+Warm and high-contrast
+forest
+Cooler green tone
+garden
+Soft and balanced
+
+Just type :colorscheme followed by the name to switch.LicenseMIT
+

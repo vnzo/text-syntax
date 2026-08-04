@@ -1,35 +1,12 @@
 # text-syntax
 
-Custom syntax highlighting for plain text (`.txt`) files in **Vim** and **Neovim**.
-
-It gives you high-contrast colors for:
-- Nested brackets `() [] {}` (including Chinese full-width brackets)
-- Chinese numerals
-- Quotes (English + Chinese)
-- Titles, lists, comments
-- Numbers, punctuation, URLs, and icons
-
+A beautiful syntax highlighting for plain text (`.txt`) files in **Vim** and **Neovim**.
 ---
-
 ## Screenshots
-
 | Overview | Nesting & Brackets | Quotes & Numbers |
 |:---:|:---:|:---:|
 | ![Demo 1](images/autumn.JPG) | ![Demo 2](images/forest.JPG) | ![Demo 3](images/garden.JPG) |
-
 ---
-
-## Features
-
-- Different highlight colors for nested brackets `()`, `[]`, `{}`
-- Chinese number highlighting
-- Smart quote support (`" "`, `“ ”`, `‘ ’`)
-- Keywords: `TODO`, `FIXME`, `NOTE`, `ERROR`, etc.
-- Comment lines starting with `#`
-- Titles and bullet lists
-- URL and email highlighting
-- Three built-in colorschemes: `autumn`, `forest`, `garden`
-
 ---
 
 ## Installation
@@ -109,41 +86,11 @@ After cloning, restart Vim or Neovim.
 1. Open any `.txt` file.  
    The syntax highlighting should activate automatically.
 
-2. For the best look, switch to one of the included colorschemes by typing:
+2. You can use one of the included colorschemes i made:
 
 ```vim
-:colorscheme autumn
+:colo autumn
+:colo forest
+:colo garden
 ```
-
-Other available themes:
-
-```vim
-:colorscheme forest
-:colorscheme garden
-```
-
-You can also set a default theme in your configuration file:
-
-```vim
-colorscheme autumn
-```
-
 ---
-
-## Colorschemes
-
-This plugin comes with three carefully designed dark themes:
-
-| Theme    | Style                     |
-|----------|---------------------------|
-| `autumn` | Warm and high-contrast    |
-| `forest` | Cooler green tone         |
-| `garden` | Soft and balanced         |
-
-Just type `:colorscheme` followed by the name to switch.
-
----
-
-## License
-
-MIT

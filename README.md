@@ -7,7 +7,6 @@ A beautiful syntax highlighting for plain text (`.txt`) files in **Vim** and **N
 |:---:|:---:|:---:|
 | ![Demo 1](images/autumn.JPG) | ![Demo 2](images/forest.JPG) | ![Demo 3](images/garden.JPG) |
 ---
----
 
 ## Installation
 
@@ -50,7 +49,6 @@ Then open Vim/Neovim and run:
 ```vim
 :PlugInstall
 ```
-
 ---
 
 ### 3. Manual Installation
@@ -93,4 +91,9 @@ After cloning, restart Vim or Neovim.
 :colo forest
 :colo garden
 ```
+---
+## Debug
+
+If the txt file doesn't show the syntax color, use ":set ft?" to see if your file type is set to text.
+
 ---

@@ -1,4 +1,41 @@
-Markdown
+# text-syntax
+
+Custom syntax highlighting for plain text (`.txt`) files in Vim / Neovim.
+
+Designed for high-contrast readability with special support for:
+- Nested brackets `() [] {}` (including full-width Chinese variants)
+- Chinese numerals
+- Quotes (English + Chinese)
+- Structural blocks, lists, and titles
+- Numbers, punctuation, URLs, and common icons
+
+## Screenshots
+
+| Overview | Nesting & Brackets | Quotes & Numbers |
+|:---:|:---:|:---:|
+| ![Demo 1](images/autumn.JPG) | ![Demo 2](images/forest.JPG) | ![Demo 3](images/garden.JPG) |
+
+## Features
+
+- **Nested brackets** with different highlight groups for `()`, `[]`, and `{}`
+- **Chinese number highlighting** (both line-start and inline)
+- **Smart quotes** support (`" "`, `“ ”`, `‘ ’`)
+- **Keywords**: `TODO`, `FIXME`, `NOTE`, `ERROR`, etc.
+- **Comments** (`#`), titles, and list markers
+- **URLs** and email headers
+- **Icons / emoji** highlighting
+- Three dedicated colorschemes: `autumn`, `forest`, `garden`
+
+## Installation
+
+### lazy.nvim (Recommended)
+
+```lua
+{
+  "vnzo/text-syntax",
+  -- optional: force load on txt files
+  ft = "text",
+}Markdown
 
 # text-syntax
 

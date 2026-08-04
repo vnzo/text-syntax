@@ -6,9 +6,9 @@ Custom syntax highlighting engine for plain text files (`.txt`), featuring high-
 
 ## Screenshots
 
-![Syntax Overview](images/demo-1.png)
-![Bracket Nesting](images/demo-2.png)
-![Chinese Numerals & Quotes](images/demo-3.png)
+![Syntax Overview](images/autumu.jpg)
+![Bracket Nesting](images/forest.jpg)
+![Chinese Numerals & Quotes](images/garden.jpg)
 
 ---
 

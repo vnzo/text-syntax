@@ -3,7 +3,7 @@
 A beautiful syntax highlighting for plain text (`.txt`) files in **Vim** and **Neovim**.
 ---
 ## Screenshots
-| Overview | Nesting & Brackets | Quotes & Numbers |
+| autumn theme | forest theme | garden theme |
 |:---:|:---:|:---:|
 | ![Demo 1](images/autumn.JPG) | ![Demo 2](images/forest.JPG) | ![Demo 3](images/garden.JPG) |
 ---

@@ -42,9 +42,9 @@ highlight Delimiter      guifg=#d8dee9 guibg=NONE    gui=none
 
 " --- COMMENT FAMILY ---
 " Comment: Targets your main comment text sentences (Storm Grey)
-highlight Comment         guifg=#949dae guibg=NONE    gui=none
+highlight Comment         guifg=#9ba29d guibg=NONE    gui=none
 " SpecialComment: Targets ONLY your starting hash symbol characters (# or #+) (Glacial Teal)
-highlight SpecialComment  guifg=#5d7c9e guibg=NONE    gui=none
+highlight SpecialComment  guifg=#6182a5 guibg=NONE    gui=none
 
 " --- TODO FAMILY ---
 " Todo: Solid campfire block: Aurora Sand Yellow on a deep Plum Shadow background block

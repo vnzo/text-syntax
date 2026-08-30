@@ -42,9 +42,9 @@ highlight Delimiter      guifg=#aad13e guibg=NONE    gui=none
 
 " --- COMMENT FAMILY ---
 " Comment: Targets your main comment text sentences (Your warm autumn-gold straw)
-highlight Comment         guifg=#aeb5ae guibg=NONE    gui=none
+highlight Comment         guifg=#9ba29d guibg=NONE    gui=none
 " SpecialComment: Targets ONLY your starting hash symbol characters (# or #+)
-highlight SpecialComment  guifg=#8c7fa0 guibg=NONE    gui=none
+highlight SpecialComment  guifg=#9e84a3 guibg=NONE    gui=none
 
 " --- TODO FAMILY ---
 " Todo: Solid, high-visibility campfire tracking blocks for open tasks

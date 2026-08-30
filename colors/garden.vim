@@ -41,7 +41,7 @@ highlight Delimiter      guifg=#e5c07b guibg=NONE    gui=none
 
 " --- COMMENT FAMILY ---
 " Comment: Targets your main comment text sentences (Damp Fern Moss Green)
-highlight Comment         guifg=#98a297 guibg=NONE    gui=none
+highlight Comment         guifg=#95928e guibg=NONE    gui=none
 " SpecialComment: SHINED UP: Targets starting hash symbols (# or #+) in brilliant Morning Orchid
 highlight SpecialComment  guifg=#41877f guibg=NONE    gui=none
 
